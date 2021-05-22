@@ -1,0 +1,205 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-21T13:06:39.828Z",
+        "line": 4,
+        "name": "Upload Resume",
+        "description": "",
+        "id": "upload-resume-in-naukri.com;upload-resume",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 120742787800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Verify title is exactly \"Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jobs - Recruitment - Job Search - Employment -Job Vacancies - Naukri.com\"",
+                  "offset": 24
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.CommonSteps.verify_title_is_exactly(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72615200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Get parent window handle",
+            "match": {
+              "location": "seleniumReady.cucumber.steps.CommonSteps.get_parent_window_handle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2007926200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "No other windows are open",
+            "match": {
+              "location": "seleniumReady.cucumber.steps.CommonSteps.no_other_windows_are_open()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1769886700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on login page",
+            "match": {
+              "location": "seleniumReady.cucumber.steps.ApplyJobsInNaukri.user_clicks_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1786728500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enter username as \"arpankushwahapro@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"arpankushwahapro@gmail.com\"",
+                  "offset": 23
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.ApplyJobsInNaukri.user_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 419434100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enter password as \"Naukri2012.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Naukri2012.\"",
+                  "offset": 23
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.ApplyJobsInNaukri.user_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 281028900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on login button",
+            "match": {
+              "location": "seleniumReady.cucumber.steps.ApplyJobsInNaukri.user_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41931032800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify title is exactly \"Home | Mynaukri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Home | Mynaukri\"",
+                  "offset": 24
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.CommonSteps.verify_title_is_exactly(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (102dcac535cdcdd8b5f653f9ca1d5fbd)] -\u003e xpath: //div[@class\u003d\u0027subMenu c2\u0027]/descendant::a[text()\u003d\u0027Edit Profile\u0027]] (tried for 90 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JEBEMV9\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\ARPANK~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:55687}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 102dcac535cdcdd8b5f653f9ca1d5fbd\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\r\n\tat helper.WaitHelper.elementToBeClickable(WaitHelper.java:131)\r\n\tat common.UILibrary.clickElementUsingJS(UILibrary.java:46)\r\n\tat common.UILibrary.clickElementUsingJS(UILibrary.java:54)\r\n\tat pom.NaukriCommonPage.clickLinkInMyNaukriMenu(NaukriCommonPage.java:39)\r\n\tat seleniumReady.cucumber.steps.CommonSteps.user_clicks_on_from_my_naukri(CommonSteps.java:58)\r\n\tat ✽.User clicks on \"Edit Profile\" from My Naukri(classpath:features/Naukri/UploadResumeInNaukri.feature:13)\r\n",
+              "duration": 218662699000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "User clicks on \"Edit Profile\" from My Naukri",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Edit Profile\"",
+                  "offset": 15
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.CommonSteps.user_clicks_on_from_my_naukri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User clicks on \"Attach Resume\" in Quick Links",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Attach Resume\"",
+                  "offset": 15
+                }
+              ],
+              "location": "seleniumReady.cucumber.steps.UploadResumeInNaukri.user_clicks_on_in_quick_links(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User upload resume after clicking Update Resume button",
+            "match": {
+              "location": "seleniumReady.cucumber.steps.UploadResumeInNaukri.user_upload_resume_after_clicking_update_resume_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@UploadResume"
+          }
+        ]
+      }
+    ],
+    "name": "Upload resume in naukri.com",
+    "description": "",
+    "id": "upload-resume-in-naukri.com",
+    "keyword": "Feature",
+    "uri": "classpath:features/Naukri/UploadResumeInNaukri.feature",
+    "tags": [
+      {
+        "name": "@UploadResume",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
